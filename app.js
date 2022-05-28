@@ -5,7 +5,6 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const userRouter = require('./routes/user');
 const postsRouter = require('./routes/posts');
-const { resetWatchers } = require('nodemon/lib/monitor/watch');
 require('./connection')
 const app = express();
 process.on('uncaughtException',err => {
